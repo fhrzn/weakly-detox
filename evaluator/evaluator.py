@@ -12,10 +12,13 @@ from pprint import pprint
 import argparse
 import sys
 import evaluate
+import re
 
 def load_data(trainpath, devpath, testpath):
     # load dataaset
-    if 'bart' not in trainpath and 'cyclegan' not in trainpath:
+    # if 'bart' not in trainpath and 'cyclegan' not in trainpath and 'racoln' not in trainpath:
+    bt_file_ptn = r'^\w{2}en\_\w+\.(txt|csv|tsv)$'
+    if re.match(bt_file_ptn, trainpath):
         train = pd.read_csv(trainpath, sep='\t', index_col=0)
         dev = pd.read_csv(devpath, sep='\t', index_col=0)
         test = pd.read_csv(testpath, sep='\t', index_col=0)
@@ -50,6 +53,19 @@ def load_data(trainpath, devpath, testpath):
         train = train[['generated', 'ori', 'gen']]        
         dev = dev[['generated', 'ori', 'gen']]        
         test = test[['generated', 'ori', 'gen']]
+    
+    elif 'source' in train.columns and 'gen' in train.columns:        
+        train = train[['source', 'gen']]
+        dev = dev[['source', 'gen']]
+        test = test[['source', 'gen']]
+
+    else:
+        train = train[['gen', 'ori']]
+        dev = dev[['gen', 'ori']]
+        test = test[['gen', 'ori']]
+
+
+        
 
     return (train, dev, test), (trainname, devname, testname)
 
