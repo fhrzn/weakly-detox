@@ -14,7 +14,7 @@ def tokenize_en(text):
     return [tok.text for tok in spacy_en.tokenizer(text)]
 
 
-def load_dataset(batch_size, device, path='../data/seq2seq', pos_ext='.norm', neg_ext='.tox'):
+def load_dataset(batch_size, device, path='./data/', pos_ext='.norm', neg_ext='.tox', mode='train'):
     source = Field(tokenize=tokenize_en,
                    init_token='<sos>',
                    eos_token='<eos>',
@@ -30,6 +30,6 @@ def load_dataset(batch_size, device, path='../data/seq2seq', pos_ext='.norm', ne
     
     return source, BucketIterator.splits(
         (train_data, dev_data, test_data),
-        shuffle=True,
+        shuffle=True if mode=='train' else False,
         batch_size=batch_size,
         device=device)

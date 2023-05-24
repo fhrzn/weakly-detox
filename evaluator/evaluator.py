@@ -60,9 +60,9 @@ def load_data(trainpath, devpath, testpath):
         test = test[['source', 'gen']]
 
     else:
-        train = train[['gen', 'ori']]
-        dev = dev[['gen', 'ori']]
-        test = test[['gen', 'ori']]
+        train = train[['ori', 'gen']]
+        dev = dev[['ori', 'gen']]
+        test = test[['ori', 'gen']]
 
 
         

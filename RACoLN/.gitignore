@@ -1,0 +1,10 @@
+kenlm/
+Ignore/
+nohup.out
+model/*
+!model/.gitkeep
+yelp.binary
+output/
+!output/yelp_racoln.jsonl
+logs/
+.vscode/

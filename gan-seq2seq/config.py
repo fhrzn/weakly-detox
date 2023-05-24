@@ -1,5 +1,5 @@
 DATASET_NAME = 'Detox-2'
-DATA_FOLDER = f'../data/seq2seq'
+DATA_FOLDER = f'./data/'
 MODEL_FOLDER = f'./model/{DATASET_NAME}/'
 
 POSITIVE_FILE_EXTENSION = '.norm'

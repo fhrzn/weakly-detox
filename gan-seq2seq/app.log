@@ -4550,3 +4550,13 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:4
 DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /s-nlp/roberta_toxicity_classifier/resolve/main/config.json HTTP/1.1" 200 0
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
 DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /s-nlp/roberta_toxicity_classifier/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/jovyan/notebooks/projects/thesis/gan-seq2seq, universal_newlines=False, shell=None, istream=None)
